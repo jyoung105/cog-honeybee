@@ -10,7 +10,7 @@ This is an implementation of [Kakaobrain/Honeybee](https://github.com/kakaobrain
 ## License
 
 [![Code License](https://img.shields.io/badge/Code_License-Apache_2.0-green.svg)](https://github.com/kakaobrain/honeybee/blob/main/LICENSE.apache-2.0)
-[![Weight License](https://img.shields.io/badge/Code_License-CC-BY-NC-4.0-green.svg)](https://github.com/kakaobrain/honeybee/blob/main/LICENSE.cc-by-nc-4.0)
+[![Weight License](https://img.shields.io/badge/Code_License-CC_BY_NC_4.0-green.svg)](https://github.com/kakaobrain/honeybee/blob/main/LICENSE.cc-by-nc-4.0)
 
 ## Development
 
