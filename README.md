@@ -20,4 +20,4 @@ Follow the [model pushing guide](https://replicate.com/docs/guides/push-a-model)
 
 Run a prediction
 
-    cog predict -i image=@"" -i prompt="Help me write an advertisement for this."
+    cog predict -i image=@example.jpg -i prompt="Help me write an advertisement for this."

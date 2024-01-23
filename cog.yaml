@@ -1,0 +1,31 @@
+# Configuration for Cog ⚙️
+# Reference: https://github.com/replicate/cog/blob/main/docs/yaml.md
+
+build:
+  # set to true if your model requires a GPU
+  gpu: true
+  python_version: "3.11"
+  python_packages:
+    - "torch==2.0.1"
+    - "torchvision"
+    - "transformers==4.30.2"
+    - "numpy==1.23.4"
+    - "omegaconf==2.3.0"
+    - "pandas==1.5.3"
+    - "peft==0.3.0"
+    - "Pillow==9.4.0"
+    - "PyYAML==6.0"
+    - "scikit_learn==1.2.1"
+    - "sconf==0.2.5"
+    - "timm==0.9.8"
+    - "tqdm==4.64.1"
+    - "tokenizers==0.13.3"
+    - "einops==0.7.0"
+    - "prettytable==3.9.0"
+    - "sentencepiece==0.1.99"
+
+  run:
+    - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.3.1/pget" && chmod +x /usr/local/bin/pget
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
