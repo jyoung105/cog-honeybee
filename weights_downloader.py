@@ -1,6 +1,5 @@
-import subprocess
-import time
 import os
+import subprocess
 
 
 class WeightsDownloader:
@@ -11,9 +10,7 @@ class WeightsDownloader:
 
     @staticmethod
     def download(url, dest):
-        start = time.time()
         print("downloading url: ", url)
         print("downloading to: ", dest)
         subprocess.check_call(["pget", url, dest], close_fds=False)
-        subprocess.check_call(["tar", "-xzvf", dest])
-        print("downloading took: ", time.time() - start)
+        subprocess.check_call(["tar", "-zxvf", dest])
