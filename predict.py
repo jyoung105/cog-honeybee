@@ -8,7 +8,7 @@ import torch
 from PIL import Image
 
 from weights_downloader import WeightsDownloader
-from honeybee.pipeline.interface import get_model
+from pipeline.interface import get_model
 
 MODEL_NAME = "kakaobrain/honeybee_7B-C-Abs-M256"
 MODEL_CACHE = "model-cache"
@@ -19,7 +19,7 @@ class Predictor(BasePredictor):
         """Load the model into memory to make running multiple predictions efficient"""
         WeightsDownloader.download_if_not_exists(MODEL_URL, MODEL_CACHE)
 
-        ckpt_path = "checkpoints/7B-C-Abs-M256/last"
+        ckpt_path = "./7B-C-Abs-M256/last"
 
         start = time.time()
         print("Loading pipeline...")

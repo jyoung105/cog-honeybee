@@ -26,7 +26,6 @@ build:
 
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.3.1/pget" && chmod +x /usr/local/bin/pget
-    - git clone https://github.com/kakaobrain/honeybee.git
 
 # predict.py defines how predictions are run on your model
 predict: "predict.py:Predictor"
